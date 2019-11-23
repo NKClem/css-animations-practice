@@ -1,0 +1,31 @@
+body {
+    background-color: red;
+    -webkit-animation-name: test-animation;
+    -webkit-animation-duration: 4s;
+    animation-name: test-animation;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes test-animation {
+    0% {background-color: red;}
+    25% {background-color: orange;}
+    50% {background-color: yellow}
+    75% {background-color: green;}
+    100% {background-color: blue;}
+}
+
+@-webkit-keyframes test-animation {
+    0% {background-color: red;}
+    25% {background-color: orange;}
+    50% {background-color: yellow}
+    75% {background-color: green;}
+    100% {background-color: blue;}
+}
+
+@media only screen and (max-width: 600px) {
+    .container-color-change {
+        min-width: 100%;
+    }
+}
